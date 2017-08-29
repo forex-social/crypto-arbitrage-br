@@ -1,6 +1,7 @@
 # Crypto Arbitrage BR
 
 A basic bot to find arbitrage oppotunities on brazilian crypto exchanges.
+
 Um robô simples para encontrar oportunidades de arbitragem em exchanges (bolsas) brasileiras.
 
 ## Sobre o projeto
@@ -20,11 +21,13 @@ Você precisa ter Node 6 ou superior instalado
 
 1. Clone ou baixe o zip desse projeto.
 2. Entre no diretório do projeto no terminal e instale as dependências usando o npm install:
+
 `$ npm install`
 
 ## Usando
 
 Entre no diretório do projeto no terminal e execute o index.js
+
 `$ node index`
 
 ## To do
