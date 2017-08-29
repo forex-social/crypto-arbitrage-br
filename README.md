@@ -2,7 +2,7 @@
 
 A basic bot to find arbitrage oppotunities on brazilian crypto exchanges.
 
-Um robô simples para encontrar oportunidades de arbitragem em exchanges (bolsas) brasileiras.
+Um robô simples para encontrar oportunidades de arbitragem em exchanges (bolsas) de criptomoedas brasileiras.
 
 ## Sobre o projeto
 
