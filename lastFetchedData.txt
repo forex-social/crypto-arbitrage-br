@@ -1,0 +1,1 @@
+[{"name":"foxbit","cost":0.005,"bid":15999.8,"ask":15999.99},{"name":"mercado","cost":0.007,"bid":15876,"ask":15900},{"name":"flowbtc","cost":0.0035,"bid":15600.01,"ask":15900}]
