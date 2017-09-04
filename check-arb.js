@@ -26,7 +26,7 @@ function checkOpportunity (prices) {
 		console.log('Possíveis Oportunidades. Verificando custo para comprar '+amount+' bitcoins....');
 		
 			var priceDifference = (bestBid.bid * amount) - (bestAsk.ask * amount);
-			console.log('Ganha-se na arbitragem: R$', priceDifference.toFixed(2), 'comprando na',bestAsk.name, 'e vendendo na',bestBid.name);
+			console.log('Ganha-se na arbitragem: R$', priceDifference.toFixed(2), 'comprando na',bestAsk.name, ' por: R$', bestAsk.ask ,'e vendendo na',bestBid.name, ' por: R$', bestBid.bid);
 
 
 			var buyCost = bestAsk.ask * amount * bestAsk.cost;
