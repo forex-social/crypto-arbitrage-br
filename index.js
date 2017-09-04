@@ -1,3 +1,5 @@
+"use strict";
+
 const ccxt = require ('ccxt');
 const checkArb = require('./check-arb');
 
