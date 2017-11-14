@@ -65,9 +65,13 @@ async function fetchData() {
 
         const dataFoxBit = await fetchDataFoxBit();
         const dataMercadoBitcoin = await fetchDataMercadoBitcoin();
-        const dataFlowBTC = await fetchDataFlowBTC();
+        // const dataFlowBTC = await fetchDataFlowBTC();
 
-        Promise.all([await fetchDataFoxBit(), await fetchDataMercadoBitcoin(), await fetchDataFlowBTC()])
+        Promise.all([
+          await fetchDataFoxBit(), 
+          await fetchDataMercadoBitcoin(), 
+          // await fetchDataFlowBTC()
+          ])
           .then((response) => {
               checkArb(response);
           })
