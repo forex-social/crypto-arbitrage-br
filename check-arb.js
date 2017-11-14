@@ -2,6 +2,8 @@
 
 var _ = require('lodash');
 var fs = require('fs');
+var beep = require('node-beep');
+
 
 function checkOpportunity (prices) {	
 
@@ -40,6 +42,7 @@ function checkOpportunity (prices) {
 
 			if (totalCost < priceDifference)  {
 				console.log('Buy on ', bestAsk.name, 'and Sell on ', bestBid.name );
+				beep(5);				
 			} else {
 				console.log('O custo não justifica', '\n\n');
 			}

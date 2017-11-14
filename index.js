@@ -61,6 +61,8 @@ async function fetchDataFlowBTC() {
 
 async function fetchData() {
 
+    console.log('Procurando oportunidades....');
+
     try {
 
         const dataFoxBit = await fetchDataFoxBit();
@@ -74,14 +76,17 @@ async function fetchData() {
           ])
           .then((response) => {
               checkArb(response);
+              setTimeout(fetchData, 60000);
           })
           .catch((err)=> {
               console.error(err.message);
+              setTimeout(fetchData, 60000);
           });
     }
 
     catch (err) {
         console.error(err.message);
+        setTimeout(fetchData, 60000);
     }
     
 }
