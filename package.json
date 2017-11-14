@@ -9,7 +9,7 @@
   "author": "forex@forex-social.com",
   "license": "GPL-3.0",
   "dependencies": {
-    "ccxt": "^1.6.22",
+    "ccxt": "^1.10.97",
     "lodash": "^4.17.4"
   }
 }
