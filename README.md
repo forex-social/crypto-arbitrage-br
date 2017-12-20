@@ -32,7 +32,6 @@ Entre no diretório do projeto no terminal e execute o index.js
 
 ## To do
 Esse projeto pode ser muito melhorado. Algumas funcionalidades que podem ser implementadas no futuro:
-- Lidar melhor com erros de timeout (hoje o sicript não se não consegue conectar na API de uma exchange não dá erros)
 - Toda a automatização de um estratégia que execute essas ordens de arbitragem
 -- Autenticação com chave de API nas exchanges
 -- Analisar balanço das contas nas exchanges (R$ e BTC)
