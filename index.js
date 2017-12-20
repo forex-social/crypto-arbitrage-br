@@ -76,10 +76,12 @@ async function fetchData() {
           ])
           .then((response) => {
               checkArb(response);
+              console.log('Aguardando 1 minuto para procurar oportunidade novamente.')
               setTimeout(fetchData, 60000);
           })
           .catch((err)=> {
               console.error(err.message);
+              console.log('Aguardando 1 minuto para procurar oportunidade novamente.')
               setTimeout(fetchData, 60000);
           });
     }
