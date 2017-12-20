@@ -21,9 +21,6 @@ function checkOpportunity (prices) {
 	var bestAsk = _.minBy(prices, function(item){ return item.ask })
 
 	
-	beep(2)
-
-
 	if ( bestBid.bid > bestAsk.ask ) {
 		
 		console.log('Possíveis Oportunidades. Verificando custo para comprar '+amount+' bitcoins....');
