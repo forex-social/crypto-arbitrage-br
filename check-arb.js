@@ -20,6 +20,9 @@ function checkOpportunity (prices) {
 	var bestBid = _.maxBy(prices, function(item){ return item.bid })
 	var bestAsk = _.minBy(prices, function(item){ return item.ask })
 
+	console.log(`Melhor bid (preço de venda): ${bestBid.bid}`);
+	console.log(`Melhor ask (preço de compra): ${bestAsk.ask}`);
+
 	
 	if ( bestBid.bid > bestAsk.ask ) {
 		
