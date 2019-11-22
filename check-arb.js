@@ -17,19 +17,26 @@ function checkOpportunity (prices) {
 	})
 
 
-	var bestBid = _.maxBy(prices, function(item){ return item.bid })
-	var bestAsk = _.minBy(prices, function(item){ return item.ask })
+	var bestBid = _.maxBy(prices, function(item){ return item.bid.toFixed(2) })
+	var bestAsk = _.minBy(prices, function(item){ return item.ask.toFixed(2) })
 
 	console.log(`Melhor bid (preço de venda): ${bestBid.bid}`);
 	console.log(`Melhor ask (preço de compra): ${bestAsk.ask}`);
+        console.log('')
 
 	
 	if ( bestBid.bid > bestAsk.ask ) {
 		
 		console.log('Possíveis Oportunidades. Verificando custo para comprar '+amount+' bitcoins....');
-		
+		var totalBtcmax = (bestBid.bid * amount);
+                var totalBtcmin = (bestAsk.ask * amount);
+
+                console.log('Maximo Valor em  BTC para comprar', amount,'Total em Real R$ ',totalBtcmin.toFixed(2))
+                console.log('Maximo Valor em  BTC para vender', amount,'Total em Real R$ ',totalBtcmax.toFixed(2))
+                console.log('')
+
 		var priceDifference = (bestBid.bid * amount) - (bestAsk.ask * amount);
-		console.log('Ganha-se na arbitragem: R$', priceDifference.toFixed(2), 'comprando na',bestAsk.name, 'por: R$', bestAsk.ask ,'e vendendo na',bestBid.name, 'por: R$', bestBid.bid);
+		console.log('Ganha-se na arbitragem: R$', priceDifference.toFixed(2), 'comprando na',bestAsk.name, 'por: R$', bestAsk.ask ,'e vendendo na',bestBid.name, 'por: R$', bestBid.bid.toFixed(2));
 
 
 		var buyCost = bestAsk.ask * amount * bestAsk.cost;
